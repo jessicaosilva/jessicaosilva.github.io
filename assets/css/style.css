@@ -2,6 +2,7 @@
     --primary-color: #647da9;
     --hover-color: #647da9;
     --text-color: #f69996;
+    --text-color-light: #dcdae2;
     --hover-text-color: #ede3c9;
     --background-color: #2a353d;
     --background-color-2: #1c3d53;
@@ -32,7 +33,7 @@ header, footer {
     text-align: center;
     padding: 20px;
     background-color: var(--background-color-2);
-    color: #dcdae2;
+    color: var(--text-color-light);
 }
 
 section {
@@ -57,7 +58,7 @@ h1, h4 {
 
 #menu-topo {
     background: var(--background-color-2);
-    color: #dcdae2;
+    color: var(--text-color-light);
     position: fixed;
     top: 0;
     left: 0;
@@ -75,7 +76,7 @@ h1, h4 {
 }
 
 #menu-topo ul li a {
-    color: #dcdae2;
+    color: var(--text-color-light);
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s;
@@ -85,6 +86,10 @@ h1, h4 {
     background-color: var(--hover-color);
     color: var(--hover-text-color);
     border-radius: 5px;
+}
+
+i {
+    color: var(--text-color-light);
 }
 
 /* Ajustes de responsividade e do conteúdo */
