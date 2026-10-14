@@ -52,6 +52,13 @@ a:focus-visible {
     border-bottom: 1px solid var(--border-color);
 }
 
+#top-menu .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
 #top-menu ul {
     display: flex;
     flex-wrap: wrap;
@@ -69,6 +76,39 @@ a:focus-visible {
 #top-menu a:hover,
 #top-menu a:focus-visible {
     color: var(--accent-color);
+}
+
+.lang-switch {
+    display: flex;
+    flex-shrink: 0;
+    gap: 0.4rem;
+}
+
+.flag {
+    display: inline-flex;
+    padding: 2px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    opacity: 0.45;
+    transition: opacity 0.2s, border-color 0.2s;
+}
+
+.flag svg {
+    width: 28px;
+    height: 20px;
+    border-radius: 2px;
+}
+
+.flag:hover,
+.flag:focus-visible {
+    opacity: 0.85;
+}
+
+.flag[aria-pressed="true"] {
+    opacity: 1;
+    border-color: var(--accent-color);
 }
 
 /* Hero */
@@ -208,4 +248,25 @@ footer {
     .skills dd {
         margin-bottom: 0.8rem;
     }
+}
+
+/* Certifications */
+.list {
+    padding-left: 1.2rem;
+}
+
+.list li + li {
+    margin-top: 0.35rem;
+}
+
+.list + p {
+    margin-top: 1rem;
+}
+
+.muted {
+    color: var(--text-muted);
+}
+
+.muted::before {
+    content: "· ";
 }

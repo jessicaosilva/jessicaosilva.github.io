@@ -16,102 +16,134 @@
     <nav id="top-menu" aria-label="Sections">
         <div class="container">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#education" data-i18n="nav.education">Education</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" class="flag" data-lang="pt" lang="pt-BR" aria-label="Português" aria-pressed="false" title="Português">
+                    <svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#009c3b"/><path d="M14 2.5 25.5 10 14 17.5 2.5 10z" fill="#ffdf00"/><circle cx="14" cy="10" r="4.6" fill="#002776"/><path d="M9.6 9.1a10 10 0 0 1 8.8 2.2" stroke="#fff" stroke-width="0.9" fill="none"/></svg>
+                </button>
+                <button type="button" class="flag" data-lang="en" lang="en" aria-label="English" aria-pressed="true" title="English">
+                    <svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#fff"/><path d="M0 0h28v1.54H0zm0 3.08h28v1.54H0zm0 3.08h28v1.54H0zm0 3.08h28v1.54H0zm0 3.08h28v1.54H0zm0 3.08h28v1.54H0zm0 3.08h28V20H0z" fill="#b22234"/><rect width="12" height="10.77" fill="#3c3b6e"/><g fill="#fff"><circle cx="2" cy="1.8" r=".55"/><circle cx="6" cy="1.8" r=".55"/><circle cx="10" cy="1.8" r=".55"/><circle cx="4" cy="3.9" r=".55"/><circle cx="8" cy="3.9" r=".55"/><circle cx="2" cy="6" r=".55"/><circle cx="6" cy="6" r=".55"/><circle cx="10" cy="6" r=".55"/><circle cx="4" cy="8.1" r=".55"/><circle cx="8" cy="8.1" r=".55"/></g></svg>
+                </button>
+            </div>
         </div>
     </nav>
 
     <header class="hero">
         <div class="container">
             <h1>Jéssica Oliveira da Silva</h1>
-            <p class="role">Senior Full-Stack Engineer</p>
-            <p class="tagline">Laravel, PHP and React. <span id="years-experience">8</span>+ years building billing, fleet and business systems.</p>
-            <p class="location">São Paulo, Brazil</p>
+            <p class="role" data-i18n="hero.role">Senior Full-Stack Engineer</p>
+            <p class="tagline" data-i18n="hero.tagline">Laravel, PHP and React. <span id="years-experience">8</span>+ years building billing, fleet and business systems.</p>
+            <p class="location" data-i18n="hero.location">São Paulo, Brazil · Open to remote work</p>
         </div>
     </header>
 
     <main class="container">
         <section id="about">
-            <h2>About</h2>
-            <p>I build and maintain web applications in PHP, with Laravel and Lumen on the backend and React with TypeScript on the frontend. Most of my work has been on systems where mistakes cost money: contract billing, fleet management, CRM and ERP.</p>
-            <p>I have also led engineering teams, so I am used to scoping work with clients, giving estimates I can keep and owning delivery from the first conversation to production.</p>
+            <h2 data-i18n="about.title">About</h2>
+            <p data-i18n="about.p1">I build and maintain web applications in PHP, with Laravel and Lumen on the backend and React with TypeScript on the frontend. I have 8+ years with PHP, including 4+ years in production with Laravel and Lumen, working with Eloquent, REST APIs and relational data modeling. Most of my work has been on systems where mistakes cost money: contract billing, fleet management, CRM and ERP.</p>
+            <p data-i18n="about.p2">I have also led engineering teams, so I am used to scoping work with clients, giving estimates I can keep and owning delivery from the first conversation to production.</p>
         </section>
 
         <section id="experience">
-            <h2>Experience</h2>
+            <h2 data-i18n="experience.title">Experience</h2>
 
             <article class="job">
                 <header>
-                    <h3>Software Engineer</h3>
-                    <p class="meta">JSL S.A. <span>2026 – Present</span></p>
+                    <h3 data-i18n="tpl.role">Software Engineering Manager, Lead Software Engineer</h3>
+                    <p class="meta">TPL Platinum Log <span data-i18n="tpl.dates">May 2025 – May 2026</span></p>
                 </header>
                 <ul>
-                    <li>Maintain and extend fleet management and billing systems in Laravel 10 and Lumen on PHP 8.2.</li>
-                    <li>Built an automated code review tool that checks each change for security and regression risks before internal testing.</li>
+                    <li data-i18n="tpl.1">Built freight rule management for the logistics platform in PHP 8, including additional lead-time rules, order filters and change history.</li>
+                    <li data-i18n="tpl.2">Delivered on-time delivery reporting by state for the last-mile module, with map view and CSV export.</li>
+                    <li data-i18n="tpl.3">Led two engineering teams, 5 developers in total, covering product development and system maintenance, while continuing to write production code on a PHP 8, Python, React, TypeScript and PostgreSQL stack.</li>
+                    <li data-i18n="tpl.4">Introduced Scrum from scratch and rolled out AI-assisted development with Cursor across the team.</li>
                 </ul>
             </article>
 
             <article class="job">
                 <header>
-                    <h3>Software Engineering Manager, Lead Software Engineer</h3>
-                    <p class="meta">TPL Platinum Log <span>2025 – 2026</span></p>
+                    <h3 data-i18n="jsl.role">Software Engineer</h3>
+                    <p class="meta">JSL S.A. <span data-i18n="jsl.dates">Oct 2020 – May 2025</span></p>
                 </header>
                 <ul>
-                    <li>Built freight rule management for the logistics platform in PHP 8, including lead-time rules, order filters and change history.</li>
-                    <li>Delivered on-time delivery reporting by state for the last-mile module, with map view and CSV export.</li>
-                    <li>Led two engineering teams, 5 developers in total, while continuing to write production code, and introduced Scrum and AI-assisted development.</li>
+                    <li data-i18n="jsl.1">Replaced a manual fleet contract billing process with a web system built in Laravel and later upgraded to Laravel 8 on PHP 8.2, with Eloquent ORM and a new relational data model.</li>
+                    <li data-i18n="jsl.2">Built and maintained REST APIs in Lumen with JWT authentication.</li>
+                    <li data-i18n="jsl.3">Reduced processing time, billing errors and manual work by fixing contract adjustment issues at the source.</li>
+                    <li data-i18n="jsl.4">Built a fleet tracking feature that gave clients a detailed history and more accurate reports.</li>
                 </ul>
             </article>
 
             <article class="job">
                 <header>
-                    <h3>Software Engineer</h3>
-                    <p class="meta">JSL S.A. <span>2020 – 2025</span></p>
+                    <h3 data-i18n="callflex.role">PHP Developer</h3>
+                    <p class="meta">Callflex <span data-i18n="callflex.dates">Nov 2019 – Oct 2020</span></p>
                 </header>
                 <ul>
-                    <li>Replaced a manual fleet contract billing process with a web system built in Laravel and later upgraded to Laravel 8 on PHP 8.2, backed by a new relational data model.</li>
-                    <li>Built and maintained REST APIs in Lumen with JWT authentication.</li>
-                    <li>Reduced processing time, billing errors and manual work by fixing contract adjustment issues at the source.</li>
+                    <li data-i18n="callflex.1">Maintained and extended a telemarketing CRM in PHP 7.2 on the CodeIgniter 3 and 4 MVC framework.</li>
+                    <li data-i18n="callflex.2">Defined technical scope directly with clients and delivered new CRM features through a formal change-management process.</li>
                 </ul>
             </article>
 
             <article class="job">
                 <header>
-                    <h3>PHP Developer</h3>
-                    <p class="meta">Callflex <span>2019 – 2020</span></p>
+                    <h3 data-i18n="bis.role">Full Stack PHP Developer</h3>
+                    <p class="meta">Bis Consulting <span data-i18n="bis.dates">Jan 2018 – Nov 2019</span></p>
                 </header>
                 <ul>
-                    <li>Maintained and extended a telemarketing CRM in PHP on the CodeIgniter MVC framework.</li>
+                    <li data-i18n="bis.1">Led the migration of financial modules from a legacy ERP to a web platform using PHP, JavaScript, HTML5, CSS3 and Bootstrap 4.</li>
+                    <li data-i18n="bis.2">Integrated the Brazilian government eSocial API and automated bank reconciliation with OFX file import.</li>
+                    <li data-i18n="bis.3">Redesigned the invoice issuance flow with clients and built its web interface.</li>
                 </ul>
+            </article>
+        </section>
+
+        <section id="education">
+            <h2 data-i18n="education.title">Education</h2>
+
+            <article class="job">
+                <header>
+                    <h3 data-i18n="education.fiap">Postgraduate Degree, Tech Management</h3>
+                    <p class="meta">FIAP <span>2025 – 2026</span></p>
+                </header>
             </article>
 
             <article class="job">
                 <header>
-                    <h3>Full Stack PHP Developer</h3>
-                    <p class="meta">Bis Consulting <span>2018 – 2019</span></p>
+                    <h3 data-i18n="education.fatec">Technologist Degree, Systems Analysis and Development</h3>
+                    <p class="meta">FATEC-SP <span>2014 – 2017</span></p>
                 </header>
-                <ul>
-                    <li>Led the migration of financial modules from a legacy ERP to a web platform.</li>
-                    <li>Integrated the Brazilian government eSocial API and automated bank reconciliation.</li>
-                </ul>
             </article>
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
+            <h2 data-i18n="skills.title">Skills</h2>
             <dl class="skills">
                 <dt>Backend</dt>
-                <dd>PHP, Laravel, Lumen, Eloquent ORM, CodeIgniter, REST APIs, JWT authentication, Python</dd>
+                <dd data-i18n="skills.backend">PHP, Laravel, Lumen, Eloquent ORM, CodeIgniter 3/4 (MVC), REST API design and integration, JWT authentication, microservices, Python</dd>
                 <dt>Frontend</dt>
-                <dd>React, TypeScript, JavaScript, Livewire, Tailwind CSS, HTML, CSS</dd>
-                <dt>Databases</dt>
-                <dd>PostgreSQL, MySQL, relational data modeling</dd>
-                <dt>Tooling</dt>
-                <dd>Docker, Git, GitHub Actions, PHPUnit, Claude Code, Cursor</dd>
+                <dd>React, TypeScript, JavaScript, HTML5, CSS3, Bootstrap</dd>
+                <dt data-i18n="skills.databases.title">Databases</dt>
+                <dd data-i18n="skills.databases">PostgreSQL, MySQL, MongoDB, relational data modeling, SQL</dd>
+                <dt data-i18n="skills.tooling.title">Tooling</dt>
+                <dd>Docker, Kubernetes, Postman, Claude Code, Cursor</dd>
+                <dt data-i18n="skills.practices.title">Practices</dt>
+                <dd data-i18n="skills.practices">Scrum, technical scoping and estimation, mentoring</dd>
             </dl>
+        </section>
+
+        <section id="certifications">
+            <h2 data-i18n="certifications.title">Certifications and languages</h2>
+            <ul class="list">
+                <li>Microservices: API Gateway, Webhooks and Elastic APM <span class="muted">FIAP, 2021</span></li>
+                <li>Docker and Kubernetes: Swarm, Prometheus and Grafana <span class="muted">FIAP, 2021</span></li>
+                <li>Scrum Foundation Professional Certificate <span class="muted">CertiProf, 2020</span></li>
+            </ul>
+            <p data-i18n="certifications.languages">Portuguese, native · English, upper-intermediate (B2)</p>
         </section>
 
     </main>
